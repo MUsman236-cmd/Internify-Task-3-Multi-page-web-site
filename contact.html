@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="brand">Nexa Studio</div>
+      <div class="nav-link">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-button" class="icon-button" aria-label="Toggle theme">
+          🌙
+        </button>
+        <button
+          id="menu-button"
+          class="icon-button mobile-only"
+          aria-label="Open menu"
+        >
+          ☰
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="contact">
+        <div class="contact-layout">
+          <div class="contact-info">
+            <p class="eyebrow">Say Hello</p>
+            <h2>Let’s create something amazing.</h2>
+            <p>
+              Have a project in mind or just want to connect? Send a message and
+              I’ll get back to you soon.
+            </p>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <small id="name-error"></small>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+            <small id="email-error"></small>
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Tell me about your idea"
+            ></textarea>
+            <small id="message-error"></small>
+
+            <button type="submit" class="primary-btn submit-btn">
+              Send Message
+            </button>
+            <p id="success-message" class="success-message"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
